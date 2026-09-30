@@ -88,7 +88,7 @@ auth.install(app, database)
 async def local_requests(request, call_next):
     if request.method not in ('GET', 'HEAD', 'OPTIONS'):
         origin = request.headers.get('origin')
-        allowed_origin = os.environ.get('BUDGET_LPC_PUBLIC_URL', '').rstrip('/') or f'{request.url.scheme}://{request.url.netloc}'
+        allowed_origin = (os.environ.get('BUDGET_LPC_PUBLIC_URL') or os.environ.get('RENDER_EXTERNAL_URL') or '').rstrip('/') or f'{request.url.scheme}://{request.url.netloc}'
         if origin and origin != allowed_origin:
             return JSONResponse({'detail': 'Only requests from this app are accepted'}, status_code=403)
     response = await call_next(request)
