@@ -1,0 +1,11 @@
+data/
+*.log
+*.pid
+.env*
+**/__pycache__/
+**/node_modules/
+frontend/dist/
+*.sqlite*
+*.db
+*.tsbuildinfo
+

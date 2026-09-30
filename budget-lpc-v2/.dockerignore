@@ -1,0 +1,12 @@
+**/node_modules
+**/__pycache__
+**/.env*
+**/*.sqlite*
+**/*.db
+**/*.log
+**/*.pid
+data
+.git
+frontend/dist
+tests
+

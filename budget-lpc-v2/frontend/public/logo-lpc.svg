@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">Budget LPC logo</title>
+  <desc id="desc">Circular dark LPC logo with a blue geometric control-center symbol.</desc>
+  <defs>
+    <linearGradient id="badge" x1="44" y1="30" x2="212" y2="230" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#172b55"/>
+      <stop offset="0.52" stop-color="#0a1227"/>
+      <stop offset="1" stop-color="#050914"/>
+    </linearGradient>
+    <linearGradient id="blueLeft" x1="67" y1="119" x2="131" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#56b7ff"/>
+      <stop offset="1" stop-color="#2c6dff"/>
+    </linearGradient>
+    <linearGradient id="blueRight" x1="189" y1="119" x2="127" y2="46" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7fd3ff"/>
+      <stop offset="1" stop-color="#3d73ff"/>
+    </linearGradient>
+    <linearGradient id="violetCore" x1="95" y1="135" x2="162" y2="96" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#7f4dff"/>
+      <stop offset="1" stop-color="#d06bff"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="75" y1="197" x2="184" y2="186" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ff814f"/>
+      <stop offset="1" stop-color="#ffb15c"/>
+    </linearGradient>
+    <filter id="softShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="12" stdDeviation="10" flood-color="#000000" flood-opacity="0.28"/>
+    </filter>
+  </defs>
+  <circle cx="128" cy="128" r="116" fill="url(#badge)" filter="url(#softShadow)"/>
+  <path d="M128 39 69 126l48-19 11-68Z" fill="url(#blueLeft)"/>
+  <path d="M128 39 187 126l-48-19-11-68Z" fill="url(#blueRight)"/>
+  <path d="M88 141h30l10-16 10 16h30l-40-46-40 46Z" fill="url(#violetCore)"/>
+  <path d="M78 181c22 24 78 25 102 0" fill="none" stroke="url(#accent)" stroke-width="9" stroke-linecap="round"/>
+  <path d="M63 166h22v12H48v-47h15v35Zm67 12H93v-47h35c12 0 20 7 20 18 0 10-8 18-20 18h-20v11Zm-22-23h17c5 0 8-2 8-6s-3-6-8-6h-17v12Zm91 24c-22 0-37-10-37-25s15-25 37-25c12 0 22 3 30 9l-9 10c-5-4-12-6-20-6-13 0-22 5-22 12s9 12 22 12c8 0 15-2 20-6l9 10c-8 6-18 9-30 9Z" fill="#f7f9ff"/>
+</svg>
+
