@@ -1,7 +1,7 @@
 /* Only public app artwork and an offline notice are cached. Financial API
    responses, statements, exports, backups and writes always use the network. */
-const CACHE = 'budget-lpc-public-v1';
-const PUBLIC_FILES = ['/offline.html', '/icons/icon-192.png', '/icons/icon-512.png', '/icons/apple-touch-icon.png'];
+const CACHE = 'budget-lpc-public-v2';
+const PUBLIC_FILES = ['/offline.html', '/reconnect.js', '/icons/icon-192.png', '/icons/icon-512.png', '/icons/apple-touch-icon.png'];
 self.addEventListener('install', event => {
   event.waitUntil(caches.open(CACHE).then(cache => cache.addAll(PUBLIC_FILES)).then(() => self.skipWaiting()));
 });
